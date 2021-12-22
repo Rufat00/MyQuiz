@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Quiz</title>
+</head>
+<body>
+    <h4 class="myInfo">Quiz made by Rufat ;)</h4>
+    <div class="startBlock active"><button id="startBtn">Start Quiz</button></div>
+   <div class="mainBlock">
+     <div class="block1">
+        <div class="infoBlock ">
+            <div class="infoTitle"><span>Some Rules of this Quiz</span></div>
+            <div class="infoList">
+                <div class="info">1. You will have only <span style="color: #007bff;">15 seconds</span> per each question.</div>
+                <div class="info">2. Once you select your answer, it can't be undone.</div>
+                <div class="info">3. You can't select any option once time goes off.</div>
+                <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+                <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            </div>
+            <div class="infoBtn">
+                <button class="exit">Exit Quiz</button>
+                <button class="infoNext">Continue</button>
+            </div>
+        </div>
+     </div>
+    <div class="block2">
+        <div class="quizBlock">
+            <header>
+                <span class="headerName">Awesome Quiz Application</span>
+                    <div class="timer">
+                        <span>Time Left</span>
+                        <span class="timeLeft">15</span>
+                    </div>
+                <div class="timeLine"></div>
+            </header>
+            <section>
+                <div class="question">
+    
+                </div>
+                <div class="options">
+    
+                </div>
+            </section>
+            <footer>
+                <span class="qNumber">
+                    <p class="number"></p>
+                    <p>of</p>
+                    <p class="totalNumber"></p>
+                    <p>Questions</p>
+                </span>
+                <button class="next">Next</button>
+            </footer>
+        </div>
+    </div>
+    <div class="block3">
+      <div class="resultBlock">
+        <div class="awards"></div>
+        <p>You've completed the Quiz!</p>
+        <p class="score"></p>
+        <div class="resultBtn">
+            <button id="replay">Replay Quiz</button>
+            <button id="resultExit" class="exit">Quit Quiz</button>
+        </div>
+      </div>
+    </div>
+   </div>
+<script src="main.js"></script>
+</body>
+</html>
